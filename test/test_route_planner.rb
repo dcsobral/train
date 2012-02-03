@@ -53,9 +53,9 @@ class TestRoutePlanner < Test::Unit::TestCase
 					       :finish => 'C')
 	end
 
-	def test_shortest_cc
-		assert_equal 9, Graph.shortest(:start => 'C',
-					       :finish => 'C')
+	def test_shortest_bb
+		assert_equal 9, Graph.shortest(:start => 'B',
+					       :finish => 'B')
 	end
 
 	def test_nshortest_cc
